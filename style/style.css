@@ -106,6 +106,12 @@ nav{
   text-align: center;
   display: block;
   color: #fff; 
+  font-family: 'Nanum Gothic', sans-serif;
+  transition: all .5s ease-in;
+}
+
+.sidenav a:hover{
+    text-decoration:8px line-through #fff;
 }
 .sidenav .closebtn {
   position: absolute;
@@ -122,6 +128,11 @@ nav{
     background-color: #fff;
     padding-top: 4%;
     display: none;
+    width: 10%;
+    position: absolute;
+    right:10%;
+    padding-right: 5%;
+    font-size: 30px;
 }
   
 /*  */
@@ -795,6 +806,7 @@ address{
     margin-top: 50px;
     margin-left: 130px;
 }
+
 .course_name h3{
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
@@ -1341,4 +1353,11 @@ address{
     display: inline-block;
   line-height: 1em;
   }
-  /* banner name-2 */
+  /* slider */
+  .slide{
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 35%;
+      width: 22%;
+  }
+ 

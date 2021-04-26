@@ -39,7 +39,7 @@
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFkx6PTgUhkTaoOh_ANcFCQqGe7Y-fEZeXk5YE1npo-cnWnA/viewform?usp=sf_link" target="_blank">Internship</a>
                 </div>
             </div>
-            <span id="dot" style="cursor:pointer; text-align:right; padding-right:10%; font-size:30px ;" onclick="openNav()">&#9776;</span>
+            <span id="dot" style="cursor:pointer;text-align: right; font-size:30px ;" onclick="openNav()">&#9776;</span>
             <!--end  -->
             <!-- header -->
             <div class="header">
@@ -163,6 +163,7 @@
      </div>
      <div class="clear"></div>
      <!-- part -->
+    <section>
      <div class="part">
          <!-- part_1 -->
          <div class="part_1 wow bounceInUp">
@@ -192,6 +193,16 @@
          <div class="clear"></div>
          <h3 id="instruct" class="wow swing"><a href="instructor.html"><i class="far fa-thumbs-up"></i>&nbsp;&nbsp;CLICK TO VIEW OUR INSTRUSTORS</a></h3>
      </div>
+    </section>
+     <div class="clear"></div>
+     <!-- slider -->
+     <div class="slide">
+        <img class="myslide" src="images/one.jpeg" style="width:300px; height: 350px;">
+        <img class="myslide" src="images/two.jpeg" style="width:300px; height: 350px;">
+        <img class="myslide" src="images/three.jpeg" style="width:300px; height: 350px;">
+        <img class="myslide" src="images/four.jpeg" style="width:300px; height: 350px;">
+    </div>
+     <!-- end -->
      <div class="clear"></div>
       <!-- review -->
     <div class="box">
@@ -325,6 +336,7 @@
  <script>
     function openNav(){
             document.getElementById("myside").style.width="100%";
+
         }
         function closeNav(){
             document.getElementById("myside").style.width="0";
@@ -359,3 +371,21 @@ anime.timeline({loop: true})
   var wow = new WOW();
     wow.init();
 </script>
+
+<script>
+    var myindex=0;
+    sample();
+    function sample(){
+        var i;
+        var x=document.getElementsByClassName("myslide");
+        for(i=0; i<x.length; i++){
+            x[i].style.display="none"
+        }
+        myindex=myindex+1;
+        if(myindex>x.length){
+            myindex=1
+        }
+        x[myindex-1].style.display="block";
+        setTimeout(sample,3000)
+    }
+   </script>
