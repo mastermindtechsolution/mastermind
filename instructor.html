@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>instructor-Master mind</title>
+    <title>instructor-Master Mind Solutions</title>
+    <link rel="icon" href="images/title_logo.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
     <!-- font awsom -->
@@ -14,6 +15,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="animate.css">
+    <script src="wow.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -47,7 +51,11 @@
             </nav>
         </div>
         <div class="banner_name_3">
-            <h1 id="ins_head">Instructors</h1>
+            <h1 class="ml6">
+                <span class="text-wrapper">
+               <span class="letters">Instructors</span>
+                </span>
+           </h1>  
         <h5 id="ins_span"><span>Here we are ready to deliver all our knowledge. We welcome you all.</span><br><br>
             <span id="qote">Door For Learning</span> </h5>
         </div>
@@ -72,21 +80,21 @@
     <!-- Teachers -->
     <div class="teachers">
         <!-- teacher-1 -->
-        <div class="teacher_1">
+        <div class="teacher_1 wow fadeIn">
             <img src="images/sir-1.png">
             <h4>S.Tamil Selvan(Graphical Designer)</h4>
             <p>Responsible in handling project,
              Internship Training and to deliver the student needs in time.</p>
         </div>
         <!-- teacher-2 -->
-        <div class="teacher_2">
+        <div class="teacher_2 wow fadeIn">
             <img src="images/sir-1.png">
             <h4>M. Vijayan (Application Developer)</h4>
             <p>Ultimately responsible for taking managerial decisions 
             for the day to day operation of the institution.</p>
         </div>
         <!-- teacher-3 -->
-        <div class="teacher_3">
+        <div class="teacher_3 wow fadeIn">
             <img src="images/sir-1.png">
             <h4>Mohamad Habeeb(Android Developer)</h4>
             <p>Typical responsibilities for planning, budgeting and financial matters.
@@ -97,19 +105,19 @@
     <!-- miss -->
     <div class="teachers">
         <!-- teacher-1 -->
-        <div class="teacher_1">
+        <div class="teacher_1 wow fadeIn">
             <img src="images/miss-1.png">
             <h4>Surya(Web Developer)</h4>
             <p>Responsible for Teaching web Development</p>
         </div>
         <!-- teacher-2 -->
-        <div class="teacher_2">
+        <div class="teacher_2 wow fadeIn">
             <img src="images/miss-1.png">
             <h4>Vijayan(Talley)</h4>
             <p>Responsible for Teaching Tally to th student</p>
         </div>
         <!-- teacher-3 -->
-        <div class="teacher_3">
+        <div class="teacher_3 wow fadeIn">
             <img src="images/miss-3.png">
             <h4>Rajavel(PHP Developer)</h4>
             <p>Responsible for Teaching PHP Language</p>
@@ -120,7 +128,7 @@
     <div class="footer">
         <!-- footer_one -->
         <div class="footer_one">
-            <img src="images/youcan.png">
+            <img style="width: 50%; border-radius:10px;" src="images/form_header.png">
             <p>We are ready to satisfy all your needs related to
              technology concepts. Our door always opens for you.</p>
              <h5>Follow as</h5>
@@ -180,4 +188,26 @@
            Modal.style.display="none";
        }
    }
+</script>
+<script>
+    var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+  var wow = new WOW();
+    wow.init();
 </script>

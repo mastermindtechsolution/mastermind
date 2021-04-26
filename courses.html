@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All courses-master mind</title>
+    <title>All courses-master Mind Solutions</title>
+    <link rel="icon" href="images/title_logo.png">
     <!-- stylesheet -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
@@ -14,7 +15,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="animate.css">
+    <script src="wow.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -49,7 +53,11 @@
     </div>
     <div class="clear"></div>
     <div class="banner_name_3">
-        <h1>courses</h1>
+        <h1 class="ml6">
+               <span class="text-wrapper">
+              <span class="letters">Courses</span>
+               </span>
+          </h1>      
        <h5 id="cor_span"><span>National Approved Computer Courses & Company Certified Internship Training</span></h5>
     </div>
     <div class="fixed_content">
@@ -68,18 +76,18 @@
      </div>
  </div>
  <div class="clear"></div>
- <div class="register">
+ <div class="register wow rotateInDownRight">
      <h3><a href="https://docs.google.com/forms/d/e/1FAIpQLSeFkx6PTgUhkTaoOh_ANcFCQqGe7Y-fEZeXk5YE1npo-cnWnA/viewform?usp=sf_link" target="_blank"> CLICK TO REGISTER FOR INTERNSHIP PROGRAM </a></h3>
  </div>
  <!-- course_2 -->
  <div class="course_2">
      <div class="course_name">
-         <h3>#1 Mobile App Development</h3>
+         <h3 class="wow slideInLeft">#1 Mobile App Development</h3>
      </div>
      <!-- cour_list -->
      <div class="cour_list">
-         <h6>This Internship Training Covers</h6>
-         <ul>
+         <h6 class="wow slideInRight">This Internship Training Covers</h6>
+         <ul class="wow slideInRight">
              <li>Introduction to Android Studio</li>
              <li>Working with JAVA and XML</li>
              <li>Layout Designs and UI Designs</li>
@@ -93,12 +101,12 @@
  <!-- course_3 -->
  <div class="course_3">
     <div class="course_name">
-        <h3 id="common">#2 Web Development</h3>
+        <h3 class="wow slideInLeft" id="common">#2 Web Development</h3>
     </div>
     <!-- cour_list -->
     <div class="cour_list">
-        <h6>This Internship Training Covers</h6>
-        <ul>
+        <h6  class="wow slideInRight">This Internship Training Covers</h6>
+        <ul class="wow slideInRight" >
             <li>Introduction to HTML, CSS, JQuery</li>
             <li>Working with JavaScript for validation</li>
             <li>Design and develop static webpage</li>
@@ -112,12 +120,12 @@
 <!-- course_4 -->
 <div class="course_4">
     <div class="course_name">
-        <h3 id="common">#3 Embedded & IoT</h3>
+        <h3 class="wow slideInLeft" id="common">#3 Embedded & IoT</h3>
     </div>
     <!-- cour_list -->
     <div class="cour_list">
-        <h6>This Internship Training Covers</h6>
-        <ul>
+        <h6  class="wow slideInRight">This Internship Training Covers</h6>
+        <ul class="wow slideInRight">
             <li>Introduction to Arduino & Raspberry pi</li>
             <li>Working with more than 15 sensors</li>
             <li>Design and develop software using Vb.Net</li>
@@ -131,12 +139,12 @@
 <!-- course_5 -->
 <div class="course_5">
     <div class="course_name">
-        <h3 id="common">#4 Multimedia</h3>
+        <h3 class="wow slideInLeft" id="common">#4 Multimedia</h3>
     </div>
     <!-- cour_list -->
     <div class="cour_list">
-        <h6>This Internship Training Covers</h6>
-        <ul>
+        <h6  class="wow slideInRight">This Internship Training Covers</h6>
+        <ul class="wow slideInRight">
             <li>Introduction to VFX and Maya</li>
             <li>Working with Green Mat</li>
             <li>Develop your own ad and intro video</li>
@@ -153,10 +161,10 @@
 <div class="clear"></div>
 <!-- computer courses -->
 <div class="course_caption">
-    <div class="caption_one">
+    <div class="caption_one wow slideInLeft">
         <h3>Computer Courses</h3>
     </div>
-    <div class="caption_two">
+    <div class="caption_two wow slideInRight">
         <p>We offer you all category of computer courses at low cost with high potential. 
         After finishing your course, you will be provided with National approved Certificate.</p>
     </div>
@@ -171,7 +179,7 @@
 <div class="footer">
     <!-- footer_one -->
     <div class="footer_one">
-        <img src="images/youcan.png">
+        <img style="width: 50%; border-radius:10px;" src="images/form_header.png">
         <p>We are ready to satisfy all your needs related to
          technology concepts. Our door always opens for you.</p>
          <h5>Follow as</h5>
@@ -231,4 +239,26 @@
            Modal.style.display="none";
        }
    }
+</script>
+<script>
+    var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+  var wow = new WOW();
+    wow.init();
 </script>

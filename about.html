@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-Master mind</title>
+    <title>About-Master Mind Solutions</title>
+    <link rel="icon" href="images/title_logo.png">
+    <link rel="stylesheet" href="animate.css">
+    <script src="wow.js"></script>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
        <!-- font awsom -->
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous" />
        <!-- fonts -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
        <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -48,8 +53,12 @@
         </div>
         <!-- banner name -->
         <div class="banner_name_2">
-            <h1>About us</h1>
-            <span>10 years of Experience</span>
+            <h1 id="cont" class="ml6">
+                <span class="text-wrapper">
+                  <span class="letters">About US</span>
+                </span>
+              </h1>    
+            <span id="ab_span" >10 years of Experience</span>
         </div>
         <div class="fixed_content">
             <h4><a href="#"> Click to register for internship program</a></h4>
@@ -58,12 +67,12 @@
     <div class="clear"></div>
      <div class="about">
          <!--About vision -->
-         <div class="vision">
+         <div class="vision wow fadeInLeft" >
              <h6>our vision</h6>
              <h4>"Opening doors through literacy."</h4>
          </div>
          <!-- About we -->
-         <div class="we">
+         <div class="we wow fadeInRight">
              <h3>Who We Are</h3>
              <p>U Can Solution Ltd, the Specialists in computer Education,
                for about a decades, is an IT Training & Project Development Center 
@@ -76,7 +85,7 @@
          </div>
      </div>
      <div class="clear"></div>
-     <div class="institute_history">
+     <div class="institute_history wow jackInTheBox">
          <!-- history-1 -->
          <div class="his_1">
            <h3>  <i aria-hidden="true" class="fas fa-crown"></i> Started @2010</h3>
@@ -105,7 +114,7 @@
      <div class="footer">
         <!-- footer_one -->
         <div class="footer_one">
-            <img src="images/youcan.png">
+            <img style="width: 50%; border-radius:10px;" src="images/form_header.png">
             <p>We are ready to satisfy all your needs related to
              technology concepts. Our door always opens for you.</p>
              <h5>Follow as</h5>
@@ -165,4 +174,26 @@
            Modal.style.display="none";
        }
    }
+</script>
+<script>
+    var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+  var wow = new WOW();
+    wow.init();
 </script>

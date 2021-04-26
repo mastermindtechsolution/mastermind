@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects-master mind</title>
+    <title>Projects-Mster Mind Solutions</title>
+    <link rel="icon" href="images/title_logo.png">
     <!-- style -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
@@ -15,6 +16,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="animate.css">
+    <script src="wow.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -48,7 +52,11 @@
                 </nav>
             </div>
             <div id="banner3" class="banner_name_3">
-                <h1>Projects</h1>
+                <h1 class="ml6">
+                    <span class="text-wrapper">
+                   <span class="letters">Project</span>
+                    </span>
+               </h1>    
                 <span id="pro_span">We provide you a complete training for your Mini & Major Project.</span>
             </div>
             <div class="fixed_content">
@@ -57,7 +65,7 @@
         </div>
         <div class="clear"></div>
         <!-- intro -->
-        <div class="project_intro">
+        <div class="project_intro wow slideInUp">
             <div class="intro_title">
                 <h3>Project Development</h3>
             </div>
@@ -78,11 +86,11 @@
         <div class="clear"></div>
         <!--student -->
         <div class="project_downloads">
-            <div class="download_course">
+            <div class="download_course wow slideInLeft">
                 <h2>Project Topics for BSc (CS), IT, BCA, BCom (CA), MCom (CA), MSc, MCA, BE and ME Students</h2>
             </div>
             <!-- download -->
-            <div class="download">
+            <div class="download wow slideInRight">
                 <h3><a href="pdf/instructions_for_use.pdf"> <i class="fas fa-download"></i> CLICK TO DOWNLOAD PROJECTS TITLE PDF</a> </h3>
             </div>
         </div>
@@ -94,10 +102,10 @@
        <div class="clear"></div>
        <!-- project video -->
        <div class="project_vid">
-           <div class="vid_txt">
+           <div class="vid_txt wow slideInLeft">
                <h2>Visit Our Channel to get Tips & Ideas to start final year project </h2>
            </div>
-           <div class="vid_one">
+           <div class="vid_one wow slideInRight">
             <iframe width="650" height="400" src="https://www.youtube.com/embed/lZQITonkkx8"
           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -357,7 +365,7 @@
    <div class="footer">
     <!-- footer_one -->
     <div class="footer_one">
-        <img src="images/youcan.png">
+        <img style="width: 50%; border-radius:10px;" src="images/form_header.png">
         <p>We are ready to satisfy all your needs related to
          technology concepts. Our door always opens for you.</p>
          <h5>Follow as</h5>
@@ -418,6 +426,29 @@
        }
    }
 </script>
+<script>
+    var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+  var wow = new WOW();
+    wow.init();
+</script>
+
 
 
 

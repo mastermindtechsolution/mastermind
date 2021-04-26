@@ -63,6 +63,8 @@ nav ul li a:hover{
     font-size: 70px;
     margin-top: 20px;
     color: #fff;
+    margin-bottom: 0;
+    padding-bottom: 0;
     font-family: 'Poppins', sans-serif;
 }
 .banner_title strong{
@@ -493,6 +495,7 @@ nav{
     bottom: 30px;
     border-radius: 15px;
     z-index: 1;
+    display:none;
 }
 #img_2{
     width: 6%;
@@ -501,6 +504,7 @@ nav{
     bottom:40px;
     border-radius: 15px;
     z-index: 1;
+    display: none;
 }
 #img_3{
     width: 6%; 
@@ -509,6 +513,7 @@ nav{
     top: 70px;
     border-radius: 15px;
     z-index: 1;
+    display: none;
 }
 #img_4{
     width: 6%;
@@ -517,6 +522,7 @@ nav{
     top: 60px;
     border-radius: 15px;
     z-index: 1;
+    display: none;
 }
 .box{
     background-color: transparent;
@@ -644,7 +650,7 @@ address{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-.banner_name_2 span{
+.banner_name_2 #ab_span{
     color: #fff;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 17px;
@@ -736,14 +742,14 @@ address{
 .banner_name_3{
     background-color: transparent;
     background-image: linear-gradient(290deg,#007991 50%, #2E4A66 100%);
-     /* opacity: 0.92; */
      border-radius: 0px 0px 150px 0px;
      display: table;
      width: 100%;
-     height: 55vh;
+     height: 40vh;
 }
 .banner_name_3 h1{
     margin-bottom: 0;
+    padding-bottom: 0;
     padding-top: 40px;
     padding-left: 60px;
     color: #fff;
@@ -751,11 +757,18 @@ address{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-.banner_name_3 span{
+#pro_span{
+    color: #fff;
+    padding-left: 5%;
+}
+.banner_name_3 h5{
     color: #fff;
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 17px;
-    padding-left: 40px;   
+    font-size: 18px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 40px;
+      font-weight: normal;
 }
 .course_1 h3{
     font-family: 'Poppins', sans-serif;
@@ -1310,3 +1323,22 @@ address{
 .ieee_projects{
     margin-top: 12%;
 }
+/* name */
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.0em;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-right: 0.05em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+  line-height: 1em;
+  }
+  /* banner name-2 */

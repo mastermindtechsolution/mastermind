@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact-Master mind</title>
+    <title>Contact-Master Mind Solutions</title>
+    <link rel="icon" href="images/title_logo.png">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
     <!-- font awsom -->
@@ -14,6 +15,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="animate.css">
+    <script src="wow.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -48,7 +52,11 @@
         </div>
         <div class="clear"></div>
         <div class="banner_name_3">
-            <h1 id="con_name">Get in Touch</h1>
+            <h1 class="ml6">
+                <span class="text-wrapper">
+               <span class="letters">Contact</span>
+                </span>
+           </h1>  
         <h5 id="con_span">  <span>We are ready to provide ideas for your project,
              to give training and to deliver your project in time with documentation and PPT.</span></h5>
         </div>
@@ -58,7 +66,7 @@
     </div>
     <div class="clear"></div>
     <!-- contact us -->
-    <div class="contact_us">
+    <div class="contact_us wow bounceInLeft">
         <div class="contact_detials">
             <h2>Contact Us</h2>
            <address style="padding-top: 60px;">   <i aria-hidden="true" class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; 
@@ -97,7 +105,7 @@
     <div class="footer">
         <!-- footer_one -->
         <div class="footer_one">
-            <img src="images/youcan.png">
+            <img style="width: 50%; border-radius:10px;" src="images/form_header.png">
             <p>We are ready to satisfy all your needs related to
              technology concepts. Our door always opens for you.</p>
              <h5>Follow as</h5>
@@ -157,4 +165,26 @@
            Modal.style.display="none";
        }
    }
+</script>
+<script>
+    var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
+    translateZ: 0,
+    duration: 750,
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+  var wow = new WOW();
+    wow.init();
 </script>
