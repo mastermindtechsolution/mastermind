@@ -234,7 +234,22 @@
 }
 .end_footer{
  width: 100%;
- margin-bottom: 40%;
+ margin-bottom: 20%;
+}
+#end_span{
+    display: block;
+    width: 100%;
+  position: relative;
+  left: 25%;
+}
+#end1_span{
+    display: block;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+   position: relative;
+   left: 26%;
+   padding-left: 0px;
 }
 /* About */
 .banner_name_2 h1{
@@ -315,8 +330,9 @@
     padding-left: 0;
 }
 #con_span{
-    font-size: 8px;
+    font-size: 13px;
     font-weight: normal;
+    padding-left: 0;
     line-height: 20%;
     text-align: justify;
     line-height:20px;
@@ -405,7 +421,7 @@ width: 90%;
     margin-top: 10%;
 }
 #cor_span{
-    font-size: 10px;
+    font-size: 13px;
     padding-left: 0;
     width: 90%;
     line-height: 20px;
@@ -508,7 +524,7 @@ width: 90%;
     padding-left: 4%;
 }
 #pro_span{
-    font-size: 10px;
+    font-size: 12px;
     padding-left: 0;
     margin-left: 0;
 }

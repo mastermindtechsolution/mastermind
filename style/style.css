@@ -126,12 +126,11 @@ nav{
 }
 #dot{
     background-color: #fff;
-    padding-top: 4%;
+    padding: 2px;
     display: none;
-    width: 10%;
+    width: 8%;
     position: absolute;
     right:10%;
-    padding-right: 5%;
     font-size: 30px;
 }
   
@@ -165,6 +164,7 @@ nav{
 .fixed_content h4{
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 .fixed_content a{
     text-decoration: none;
@@ -172,6 +172,7 @@ nav{
     font-family: 'Open Sans',sans-serif;
     font-weight: 400;
     font-size: 13px;
+    z-index:1;
     text-transform:uppercase;
 }
 .fixed_content{
@@ -638,7 +639,7 @@ address{
     padding: 10px;
 }
 .end_footer h3{
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     margin-top: 10px;
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 15px;
@@ -973,8 +974,9 @@ address{
     line-height: 25px;
 }
 .teachers img{
-    width: 100%;
-    border-radius: 10px;
+ border-radius: 10px;
+ width: 100%;
+ height: 50%;
 }
 .teacher_1 h4{
     font-family: 'Poppins', sans-serif;
@@ -1036,6 +1038,7 @@ address{
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: normal;
     padding-top: 20px;
+  margin-left: 5%;
 }
 .contact_detials h5{
     font-family: 'Poppins', sans-serif;
@@ -1334,6 +1337,14 @@ address{
 }
 .ieee_projects{
     margin-top: 12%;
+}
+#end1_span{
+    padding-left: 30px;
+    font-weight: normal;
+}
+#end_span{
+    padding-right: 30px;
+    font-weight: normal;
 }
 /* name */
 .ml6 {
