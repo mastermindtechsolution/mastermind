@@ -90,10 +90,10 @@ nav{
      .sidenav {
       position: absolute;
       top: 0;
-      right: 0;
+      left: 0;
       width: 0%;
-      height: 100%;
-      z-index: 1;
+      height:100%;
+      z-index:99999;
       background: linear-gradient(290deg,#007991 50%, #2E4A66 100%);
       overflow-x: hidden;
       transition: 1s;
@@ -106,6 +106,7 @@ nav{
   text-align: center;
   display: block;
   color: #fff; 
+  z-index: 9999;
   font-family: 'Nanum Gothic', sans-serif;
   transition: all .5s ease-in;
 }
@@ -116,7 +117,7 @@ nav{
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 20px;
   font-size: 50px;
   color:#fff;
 }
