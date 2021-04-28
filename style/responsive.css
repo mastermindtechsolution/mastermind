@@ -19,6 +19,9 @@
   nav{
       display: none;
   }
+  nav ul li{
+      display: none;
+  }
   .banner_name h1{
       font-size: 35px;
       margin-bottom: 0;
