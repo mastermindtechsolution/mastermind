@@ -25,29 +25,6 @@
 
 <link href="https://www.cssscript.com/demo/lightweight-pure-javascript-preloader-preloader-js/preloader.css" rel="stylesheet" type="text/css">
 
-<style>
-    
-.scrollup
-{
-    position: fixed;
-    z-index: 9999;
-    bottom: 15px;
-    float: right;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    display: none;
-    color: #fff;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    background: url(images/top.png) center center no-repeat;
-    border-radius: 50%;
-}
-</style>
-
 </head>
 <body>
     <div class="wrapper">
@@ -355,9 +332,6 @@
        <h3 id="end_span" style="float: right;">POWERED BY MASTER MIND</h3>
     </div>
     </div>
-
-    <a href="#" class="scrollup"></a>
-
     <!-- <div class="scro"><a href="#top"><i class="fas fa-arrow-up"></i></a></div> -->
 </body>
 </html>
@@ -435,44 +409,4 @@ anime.timeline({loop: true})
   }).scroll(); //invoke scroll-handler on page-load
 });
 </script> -->
-<script type="text/javascript" src="https://www.amsbatteries.in/js/jquery.js"></script>
-
-<script>
-
-    //top
-
-$(document).ready(function(){ 
-
-					
-
-$(window).scroll(function(){
-
-    if ($(this).scrollTop() > 100) {
-
-        $('.scrollup').fadeIn();
-
-    } else {
-
-        $('.scrollup').fadeOut();
-
-    }
-
-}); 
-
-
-
-$('.scrollup').click(function(){
-
-    $("html, body").animate({ scrollTop: 0 }, 600);
-
-    return false;
-
-});
-
-
-
-});
-
-
-</script>
    <script src="https://www.cssscript.com/demo/lightweight-pure-javascript-preloader-preloader-js/preloader.js"></script>

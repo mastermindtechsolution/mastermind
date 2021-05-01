@@ -7,6 +7,9 @@ body{
     display: inline;
     padding-left: 22px;
 }
+html {
+    scroll-behavior: smooth;
+  }
 nav ul li a{
     text-decoration: none;
     font-size: 15px;
@@ -23,6 +26,15 @@ nav ul li a{
     margin-left: 40px;
   
 }
+/* .scro{
+    position:absolute;
+    right: 5%;
+    font-size: 30px;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
+    background-color:#ffab5e;
+} */
 .menu_link a{
     color:#fff;
     font-family: 'Open Sans',sans-serif;
@@ -365,7 +377,7 @@ nav{
 #instruct{
     background-color: #ffab5e;
     padding: 10px 16px;
-    width: 19%;
+    width: 20%;
     margin-left: 35%;
     border-radius: 30px;
 }
@@ -373,6 +385,7 @@ nav{
     text-decoration: none;
     color: #fff;
     font-size: 14px;
+    width: 100%;
     font-family: 'Poppins',sans-serif;
     font-weight: normal;
 }

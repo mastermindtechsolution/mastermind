@@ -1024,3 +1024,10 @@ padding-top: 0;
         text-align: center;
     }
 }
+
+/* 992 Media query */
+@media (min-width: 480px) and (max-width: 992px) {
+    body{
+        background-color: red;
+    }
+}
