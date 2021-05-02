@@ -146,7 +146,7 @@
                 <h6>Phone</h6>
                 <p>9865682992, 8667551950</p>
                 <h6>Email</h6>
-                <p>Mastermindtech14@gmail.com</p>
+                <p>mastermindtech14@gmail.com</p>
         </div>
     </div>
     <div class="clear"></div>
@@ -156,6 +156,7 @@
         <h3 id="end_span" style="float: right;">POWERED BY MASTER MIND</h3>
      </div>
     </div>
+    <a href="#" class="scrollup"></a>
 </body>
 </html>
 <script>
@@ -195,3 +196,42 @@ anime.timeline({loop: true})
   var wow = new WOW();
     wow.init();
 </script>
+
+<script>
+
+    //top
+
+$(document).ready(function(){ 
+
+					
+
+$(window).scroll(function(){
+
+    if ($(this).scrollTop() > 100) {
+
+        $('.scrollup').fadeIn();
+
+    } else {
+
+        $('.scrollup').fadeOut();
+
+    }
+
+}); 
+
+
+
+$('.scrollup').click(function(){
+
+    $("html, body").animate({ scrollTop: 0 }, 600);
+
+    return false;
+
+});
+
+
+});
+
+</script>
+
+<script type="text/javascript" src="https://www.amsbatteries.in/js/jquery.js"></script>
