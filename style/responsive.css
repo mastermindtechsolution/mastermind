@@ -1727,3 +1727,18 @@ padding-top: 0;
    } 
       
 }
+/* payment */
+@media (min-width: 320px) and (max-width: 480px) {
+    .account{
+        width: 80%;
+        margin-left: 8%;
+    }
+    .payt_img{
+        width: 100%;
+    }
+    .pay_img img{
+        width: 90%;
+        margin-top: 5%;
+        padding-left: 12px;
+    }
+}
