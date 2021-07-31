@@ -24,7 +24,7 @@ body{
 }
  nav ul li{
     display: inline;
-    padding-left: 22px;
+    padding-left: 20px;
 }
 html {
     scroll-behavior: smooth;
@@ -43,7 +43,6 @@ nav ul li a{
     background-color: #ffab5e;
     padding: 12px 30px;
     border-radius: 30px;
-    margin-left: 20px;
   
 }
 .menu_link a{
@@ -55,7 +54,7 @@ nav ul li a{
 nav{
     text-align: right;
     position: relative;
-    left: 12%;
+    left: 8%;
 
 }
 nav ul li a:hover{
@@ -1519,4 +1518,11 @@ address{
  }
  .pay_img{
      margin-top: 7%;
+ }
+ .placement img{
+     width: 20%;
+     padding-left: 40px;
+ }
+ .placement{
+     margin-top: 5%;
  }

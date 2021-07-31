@@ -1742,3 +1742,40 @@ padding-top: 0;
         padding-left: 12px;
     }
 }
+/* placement */
+@media (min-width: 320px) and (max-width: 480px) {
+    .placement img{
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+    
+}
+@media only screen and (max-width: 992px) {
+    .placement img{
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+    #place{
+        font-size: 40px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .placement img{
+        width: 60%;
+        padding-left:80px;
+        padding-bottom: 10px;
+    }
+    .wrapper{
+        width: 100%;
+        overflow: hidden;
+    }
+    .banner_2{
+        height: 10vh;
+    }
+    #dot{
+        width: 5%;
+        font-size: 40px;
+    }
+}
