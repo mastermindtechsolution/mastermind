@@ -697,13 +697,11 @@ padding-top: 0;
     nav{
         display: none;
     }
-    body{
-        width: 100%;
-    }
     .wrapper{
         width: 100%;
         overflow: hidden;
     }
+    
     #dot{
         display: block;
     }
@@ -713,7 +711,7 @@ padding-top: 0;
     }
     .banner_btn{
         font-size: 20px;
-        line-height: 35px;
+        line-height: 40px;
     }
     #youtube_link{
         font-size: 20px;
@@ -763,9 +761,8 @@ padding-top: 0;
     }
     .part_2{
         width: 40%;
-        position: absolute;
-        left: 55%;
-    }
+       
+           }
     .part_2 h4{
         width: 100%;
     }
@@ -794,7 +791,7 @@ padding-top: 0;
     .review_2{
         width:80%;
         position: relative;
-        left: 8%;
+        left: 1%;
         padding-right: 0;
     }
     .review_3{
@@ -804,7 +801,7 @@ padding-top: 0;
     .review_4{
         width: 80%;
         position: relative;
-        left: 10%;
+        left: 1%;
     }
     #img_1{
         display: none;
@@ -1078,7 +1075,7 @@ padding-top: 0;
     padding-bottom: 30px;
   }
   .banner_btn a{
-      line-height: 25px;
+      line-height: 35px;
   }
   .heading{
       float: none;
@@ -1777,5 +1774,39 @@ padding-top: 0;
     #dot{
         width: 5%;
         font-size: 40px;
+    }
+    .header{
+        display: none;
+    }
+    .wrapper{
+        width: 100%;
+        overflow: hidden;
+    }
+    .txt{
+        margin-top: 7%;
+    }
+}
+@media (min-width: 800px) and (max-width: 1125px) {
+      .header{
+          width: 100%;
+          overflow: hidden;
+      }
+      .header a{
+          font-size: 12px;
+      }
+       .menu_link{
+          padding: 8px 8px;
+      } 
+      .menu_link a{
+          font-size: 9px;
+      }
+      nav{
+          position: relative;
+          left: 2%;
+      }
+}
+@media (min-width: 700px) and (max-width: 764px) {
+    .banner_btn a{
+        line-height: 50px;
     }
 }
